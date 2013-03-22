@@ -1,0 +1,19 @@
+---
+blueprint:
+  name: Spring PetClinic
+  description: "The refactored Spring PetClinic showcases usage patterns of the Spring Framework. Learn more about the refactored source code and configuration options <a href=''>here</a>.
+  imageURL:
+  buildInstructions: "mvn package -Dmaven.test.skip"
+applications:
+- name: spring-petclinic
+  framework: spring
+  runtime: java
+  memory: 512M
+  instances: 1
+  url: spring-petclinic.${target-base}
+  path: target/petclinic.war
+  services:
+    petclinic-mysql:
+      vendor: mysql
+      version: '5.1'
+      tier: free
