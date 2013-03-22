@@ -1,7 +1,7 @@
 ---
 blueprint:
   name: "Spring PetClinic"
-  description: "The refactored Spring PetClinic showcases usage patterns of the Spring Framework. Learn more about the refactored source code and configuration options <a href='http://blog.springsource.org/2013/03/21/spring-petclinic-is-on-github/'>here</a>."
+  description: "The refactored Spring PetClinic showcases usage patterns of the Spring Framework. Learn more about the refactored source code and configuration options <a href=http://blog.springsource.org/2013/03/21/spring-petclinic-is-on-github/>here</a>."
   imageURL: "http://spring-petclinic.cloudfoundry.com/resources/images/pets.png"
   buildInstructions: "mvn package -Dmaven.test.skip"
 applications:
